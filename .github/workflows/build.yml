@@ -21,27 +21,8 @@ jobs:
   build:
     strategy:
       matrix:
-        goos: [windows, linux, darwin]
-        goarch: [amd64, 386, arm64]
-        exclude:
-          - goarch: 386
-            goos: darwin
-        include:
-          # BEGIN Linux ARM 5 6 7
-          - goos: linux
-            goarch: arm
-            goarm: 7
-          - goos: linux
-            goarch: arm
-            goarm: 6
-          - goos: linux
-            goarch: arm
-            goarm: 5
-          # END Linux ARM 5 6 7
-          # Windows ARM 7
-          - goos: windows
-            goarch: arm
-            goarm: 7
+        goos: [windows, linux]
+        goarch: [amd64]
       fail-fast: false
 
     runs-on: ubuntu-20.04
