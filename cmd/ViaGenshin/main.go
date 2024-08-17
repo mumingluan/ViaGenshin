@@ -22,6 +22,7 @@ import (
 
 func main() {
 	// 启动读取配置
+	gin.SetMode(gin.ReleaseMode)
 	err := config.LoadConfig()
 	if err != nil {
 		if err == config.FileNotExist {
