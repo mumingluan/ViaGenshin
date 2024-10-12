@@ -17,15 +17,15 @@ import (
 
 const (
 	consoleUid         = uint32(1)
-	consoleNickname    = "望星忆君"
+	consoleNickname    = "愚人众"
 	consoleLevel       = uint32(60)
 	consoleWorldLevel  = uint32(8)
 	consoleSignature   = ""
 	consoleNameCardId  = uint32(210001)
 	consoleAvatarId    = uint32(10000077)
 	consoleCostumeId   = uint32(0)
-	consoleWelcomeText = "望星开发服 DEV_TianliPS 3.4 \n请不要在未完成新手任务时就使用gm指令添加角色\n输入“help”获取更多支持"
-	consoleHelpText    = "欢迎来到天理尝蛆，天理服务器是一个完全免费的服务器，如果你在其他任何地方以付费方式获得的与服务器相关文件，请立即举报并退款\n可向此机器人输入gm指令（是gm指令，不是指令服指令）\n此gm机器人无需验证码，可在gm网站无法访问时使用\ngm指令往此输入，请不要在未完成新手任务时就使用gm指令添加角色"
+	consoleWelcomeText = "欢迎游玩愚人众伪官服！"
+	consoleHelpText    = "欢迎游玩愚人众伪官服！\n可向此机器人输入指令直接执行。\n请不要在未完成新手任务时就使用指令添加角色！"
 )
 
 type MuipResponseBody struct {
